@@ -1,0 +1,46 @@
+/* General page setup */
+body {
+    background-color: #000;
+    color: #00FF00; /* Neon green for terminal text */
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Terminal styling */
+.terminal {
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+
+#input {
+    background: black;
+    color: #00FF00;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    margin-top: 10px;
+}
+
+#input:focus {
+    outline: none;
+}
+
+/* Typing effect */
+.typing {
+    animation: typing 1s steps(30) 1s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
